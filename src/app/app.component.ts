@@ -8,16 +8,10 @@ import { BlogService } from './blog.service';
 })
 export class AppComponent {
   title = 'blog-app';
-  public blogdata = [];
-  constructor(private myBlog: BlogService) {}
-  ngOnInit() {
-    this.myBlog.getData().subscribe((data) => {
-      this.blogdata = Array.from(Object.keys(data), i=>data[i]);
-      // manipulate the data before storing into blogdata
+  // constructor(private myBlog: BlogService) { }
+  constructor() { }
 
-      console.log(this.blogdata);
-      // maybe put this on localstorage and manipulate in there
-    })
-    // console.log(this.blogdata.length); // how to make this async
+  ngOnInit() {
+    // this.myBlog.getData()
   }
 }

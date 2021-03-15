@@ -1,0 +1,11 @@
+<h2>select a blog you want to read: </h2>
+<ul>
+  <li *ngFor="let blog of blogdata">
+    <h5>
+      <a 
+      rel="noopener"
+      (click) = "navigate(blog)" 
+      routerLink="/blogview">{{blog.name}}</a>
+    </h5>
+  </li>
+</ul>
