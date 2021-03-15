@@ -35,5 +35,25 @@
       "email": "Hayden@althea.biz",
       "body": "harum non quasi et ratione\ntempore iure ex voluptates in ratione\nharum architecto fugit inventore cupiditate\nvoluptates magni quo et"
     }
+  ],
+  "Users" : [
+    {
+      "id": 1,
+      "username": "buda",
+      "password": "12345",
+      "admin": true
+    },
+    {
+      "id": 2,
+      "username": "user1",
+      "password": "12345",
+      "admin": false
+    },
+    {
+      "id": 3,
+      "username": "user2",
+      "password": "12345",
+      "admin": false
+    }
   ]
 }

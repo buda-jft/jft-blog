@@ -23,23 +23,10 @@ export class HomeComponent implements OnInit {
   }
 
   // enforce type here
-  navigate(data) {
-    this.router.navigate(['blogview', data]);
+  navigate(id) {
+    // how to serialilze id from here
+    this.router.navigate(['blogview', id]);
     // console.log(data)
   }
 
 }
-
-/*
-constructor(private myBlog: BlogService) {}
-ngOnInit() {
-  this.myBlog.getData().subscribe((data) => {
-    this.blogdata = Array.from(Object.keys(data), i=>data[i]);
-    // manipulate the data before storing into blogdata
-
-    console.log(this.blogdata);
-    // maybe put this on localstorage and manipulate in there
-  })
-  // console.log(this.blogdata.length); // how to make this async
-}
-*/
