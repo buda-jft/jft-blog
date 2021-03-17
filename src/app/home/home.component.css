@@ -1,0 +1,38 @@
+h2 {
+  text-align: center;
+  font-family: 'Times New Roman';
+  font-size: 40px;
+  color: brown;
+  background-color: cornsilk;
+  margin: 0px 400px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+/* .container > button {
+  flex: 1;
+} */
+.btn {
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 16px;
+  padding: 16px 30px;
+  margin: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+.btn-2:hover {
+  background-color: rgb(223, 204, 41);
+  color: rgb(184, 35, 35);
+}
+.btn-1:hover {
+  background-color: rgb(28, 204, 122);
+  color: white;
+}
+li {
+  display:table;
+  margin:0px auto 0px auto;
+}

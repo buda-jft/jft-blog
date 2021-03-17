@@ -24,5 +24,6 @@ export class BlogViewComponent implements OnInit {
         // console.log('last get blog from subs ', typeof(this.blog), this.blog.username);
       }), e => console.log(e)
     })
+    
   }
 }

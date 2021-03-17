@@ -1,11 +1,22 @@
+<div class="container">
+  <button class="btn btn-1" (click)="loginform()">Login</button>
+  <button class="btn btn-2">Add New</button>
+</div>
 <h2>select a blog you want to read: </h2>
 <ul>
   <li *ngFor="let blog of blogdata">
     <h5>
-      <a 
+      <a
       rel="noopener"
-      (click) = "navigate(blog.id)" 
-      routerLink="/blogview/">{{blog.name}}</a>
+      (click) = "navigate(blog.id)"
+      class="blogcontainer" 
+      routerLink="/blogview/blog.id">{{blog.name}}</a>
     </h5>
+    
+    <!-- <h5>
+      <a
+      rel="noopener"
+      routerLink="/blogview/">{{blog.name}}</a>
+    </h5> -->
   </li>
 </ul>

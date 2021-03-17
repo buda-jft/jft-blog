@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.myBlog.getData().subscribe((data) => {
       this.blogdata = Array.from(Object.keys(data), i=>data[i]);
-      // console.log(this.blogdata);
+      console.log('on init ', this.blogdata);
     }, (e) => console.log(e))
   }
 
@@ -26,7 +26,12 @@ export class HomeComponent implements OnInit {
   navigate(id) {
     // how to serialilze id from here
     this.router.navigate(['blogview', id]);
-    // console.log(data)
+    console.log('blog is clicked')
+  }
+
+  loginform() {
+    // this will redirect to login form component
+    console.log('redirecting')
   }
 
 }

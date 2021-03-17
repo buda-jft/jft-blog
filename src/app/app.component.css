@@ -8,3 +8,7 @@ header {
     left: 0;
     top: 0;
 }
+
+.btn:hover {
+    background-color: #25c02d;
+}
